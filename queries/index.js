@@ -1,19 +1,20 @@
 const sqlite3 = require("sqlite3").verbose();
 
 /**
- * Fetches sentences with different computed domains compared to user-provided domains.
+ * Retrieves the count per model when the computed domains is the same as the user submitted user_domain.
  *
  * @param {sqlite3.Database} db - The SQLite3 database connection object.
  * @returns {Promise<Array<Object>>} - A promise that resolves to an array of objects containing model and count.
  */
-async function getDiffModels(db) {
+async function getDomainMatches(db) {
   return new Promise((resolve, reject) => {
     db.all(
       `SELECT model, COUNT(*) AS total_count
            FROM sentence_domains
-           WHERE computed_domain != user_domain
+           WHERE TRIM(LOWER(computed_domain)) == TRIM(LOWER(user_domain))
            GROUP BY model
-           HAVING total_count > 1`,
+           HAVING total_count > 1
+           ORDER BY total_count DESC`,
       (err, rows) => {
         if (err) {
           reject(err);
@@ -80,7 +81,7 @@ async function getSameComputedDomainSentences(db) {
 }
 // Export the functions
 module.exports = {
-  getDiffModels,
+  getDiffModels: getDomainMatches,
   getDisparateSentences,
   getSameComputedDomainSentences,
 };

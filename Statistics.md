@@ -1,22 +1,20 @@
-## Disagreements between Computed Domains and User Domains
-This table shows how much a models responses differ from the user supplied domains.
+## Models with the highest accuracy compared to user submitted categories
+This table provides the number of sentences a model correctly categorized. The larger the number, the better the model performed.
 | Model | Total Count |
 | --- | --- |
-| Qwen/Qwen2-72B-Instruct | 37 |
-| gemini-1.5-flash-001 | 34 |
-| gemini-1.5-pro-001 | 78 |
-| google/gemma-2-27b-it | 64 |
-| google/gemma-2-9b-it | 78 |
-| gpt-3.5-turbo | 33 |
-| gpt-4o | 33 |
-| gpt-4o-mini | 35 |
-| meta-llama/Meta-Llama-3-70B-Instruct | 38 |
-| meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo | 35 |
+| gpt-4o | 45 |
+| gpt-3.5-turbo | 45 |
+| gemini-1.5-flash-001 | 44 |
+| meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo | 43 |
+| gpt-4o-mini | 43 |
+| Qwen/Qwen2-72B-Instruct | 41 |
+| meta-llama/Meta-Llama-3-70B-Instruct | 40 |
 | meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo | 39 |
-| meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo | 41 |
-| mistralai/Mistral-7B-Instruct-v0.3 | 78 |
-| mistralai/Mixtral-8x22B-Instruct-v0.1 | 78 |
-| mistralai/Mixtral-8x7B-Instruct-v0.1 | 78 |
+| meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo | 37 |
+| mistralai/Mixtral-8x22B-Instruct-v0.1 | 36 |
+| mistralai/Mistral-7B-Instruct-v0.3 | 24 |
+| mistralai/Mixtral-8x7B-Instruct-v0.1 | 19 |
+| google/gemma-2-27b-it | 14 |
 
 ## Sentences with most disagreement of Computed Domains
 This table highlights the sentences that have the most disagreement between the models computed domains.

@@ -14,9 +14,11 @@ async function main() {
     const sameComputedDomainData = await getSameComputedDomainSentences(db);
 
     // Create markdown tables
-    console.log("## Disagreements between Computed Domains and User Domains");
     console.log(
-      "This table shows how much a models responses differ from the user supplied domains."
+      "## Models with the highest accuracy compared to user submitted categories"
+    );
+    console.log(
+      "This table provides the number of sentences a model correctly categorized. The larger the number, the better the model performed."
     );
     console.log(createMarkdownTable(modelsData, ["Model", "Total Count"]));
 
