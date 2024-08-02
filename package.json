@@ -1,0 +1,19 @@
+{
+  "name": "sentence-domain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "generate-stats": "node scripts/createMarkdownTables.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "formulaic-node": "^0.1.4",
+    "sqlite3": "^5.1.7"
+  }
+}

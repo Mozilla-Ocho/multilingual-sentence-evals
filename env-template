@@ -1,0 +1,3 @@
+FORMULAIC_API_KEY = 
+FORMULAIC_API_URL = "http://formulaic.app"
+FORMULAIC_FORMULA_URL = # Create a formula that has the prompt(s) you want, a sentence variable and a "domains" variable
