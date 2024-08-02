@@ -1,6 +1,6 @@
 # Computing sentence categories using Large Language Models and Formulaic
 
-A summary of interesting statsistics is available on the (Statistics)[/Statistics.md] page.
+A summary of interesting statsistics is available on the [Statistics](/Statistics.md) page.
 
 ## Quick start:
 
