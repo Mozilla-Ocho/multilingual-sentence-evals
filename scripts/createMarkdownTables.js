@@ -13,6 +13,7 @@ async function main() {
     const sentencesData = await getDisparateSentences(db);
     const sameComputedDomainData = await getSameComputedDomainSentences(db);
 
+    console.log("# Model Comparison and Statistics");
     // Create markdown tables
     console.log(
       "## Models with the highest accuracy compared to user submitted categories"
